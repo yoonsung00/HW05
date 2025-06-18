@@ -27,6 +27,10 @@ int32 AMyActor::Step()
 
 void AMyActor::Move()
 {
+    FVector2D PreviousPosition = CurrentPosition;
+    float TotalDistance = 0.0f;
+    int32 EventCount = 0;
+
     for (int32 i = 1; i <= 10; ++i)
     {
         int32 x = Step();
@@ -35,8 +39,21 @@ void AMyActor::Move()
         CurrentPosition.X += x;
         CurrentPosition.Y += y;
 
-        UE_LOG(LogTemp, Warning, TEXT("Step %d: 현재 위치 = (%.0f, %.0f)"), i, CurrentPosition.X, CurrentPosition.Y);
+        float StepDistance = FVector2D::Distance(CurrentPosition, PreviousPosition);
+        TotalDistance += StepDistance;
+
+        bool bEventOccurred = FMath::RandRange(0, 1) == 1;
+
+        if (bEventOccurred)
+        {
+            ++EventCount;
+        }
+
+        UE_LOG(LogTemp, Warning, TEXT("Step %d: 현재 위치 = (%.0f, %.0f), 이동 거리 = %.2f, 이벤트 발생: %s"), i, CurrentPosition.X, CurrentPosition.Y, StepDistance, bEventOccurred ? TEXT("예") : TEXT("아니오"));
+
+        PreviousPosition = CurrentPosition;
     }
 
-    UE_LOG(LogTemp, Warning, TEXT("이동 완료"));
+    UE_LOG(LogTemp, Warning, TEXT("이동 완료 - 총 이동 거리: %.2f, 이벤트 발생 횟수: %d"), TotalDistance, EventCount);
 }
+

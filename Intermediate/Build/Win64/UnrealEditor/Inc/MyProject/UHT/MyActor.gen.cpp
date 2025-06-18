@@ -98,14 +98,14 @@ AMyActor::~AMyActor() {}
 // ********** End Class AMyActor *******************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_UnrealGit_MyProject_Source_MyProject_Public_MyActor_h__Script_MyProject_Statics
+struct Z_CompiledInDeferFile_FID_UnrealGit_HW05_Source_MyProject_Public_MyActor_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_AMyActor, AMyActor::StaticClass, TEXT("AMyActor"), &Z_Registration_Info_UClass_AMyActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMyActor), 3002316237U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealGit_MyProject_Source_MyProject_Public_MyActor_h__Script_MyProject_1409737392(TEXT("/Script/MyProject"),
-	Z_CompiledInDeferFile_FID_UnrealGit_MyProject_Source_MyProject_Public_MyActor_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealGit_MyProject_Source_MyProject_Public_MyActor_h__Script_MyProject_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealGit_HW05_Source_MyProject_Public_MyActor_h__Script_MyProject_1409737392(TEXT("/Script/MyProject"),
+	Z_CompiledInDeferFile_FID_UnrealGit_HW05_Source_MyProject_Public_MyActor_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealGit_HW05_Source_MyProject_Public_MyActor_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

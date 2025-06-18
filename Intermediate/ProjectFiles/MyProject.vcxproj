@@ -252,6 +252,8 @@
     <None Include="..\..\MyProject.uproject"/>
     <None Include="..\..\Source\MyProject.Target.cs"/>
     <None Include="..\..\Source\MyProjectEditor.Target.cs"/>
+    <None Include="..\..\.gitattributes"/>
+    <None Include="..\..\.gitignore"/>
     <None Include="..\..\.vsconfig"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>

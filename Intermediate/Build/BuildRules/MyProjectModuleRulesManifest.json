@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\UnrealGit\\MyProject\\Source\\MyProject\\MyProject.Build.cs",
-		"C:\\UnrealGit\\MyProject\\Source\\MyProject.Target.cs",
-		"C:\\UnrealGit\\MyProject\\Source\\MyProjectEditor.Target.cs"
+		"C:\\UnrealGit\\HW05\\Source\\MyProject\\MyProject.Build.cs",
+		"C:\\UnrealGit\\HW05\\Source\\MyProject.Target.cs",
+		"C:\\UnrealGit\\HW05\\Source\\MyProjectEditor.Target.cs"
 	],
 	"EngineVersion": "5.6.0"
 }
